@@ -137,14 +137,6 @@ const eyeColor = {
   "blue-gray": [],
 };
 
-for (let i = 0; i < starWarsCharacters.length; i++) {
-  const smistamentOcchi = starWarsCharacters[i].eye_color;
-  if (eyeColor[smistamentOcchi]) {
-    eyeColor[smistamentOcchi].push(starWarsCharacters[i]);
-  }
-}
-console.log("Questo è l'oggetto con tutti i colori occhi", eyeColor);
-
 /* ESERCIZIO 5
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
@@ -216,8 +208,8 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
     starWarsCharacters[i].gender = "robot";
   }
 }
-console.log("i robottini ora sono dei: ", starWarsCharacters[1].gender)
-console.log("Equipaggio aggiornato", starWarsCharacters)
+console.log("i robottini ora sono dei: ", starWarsCharacters[1].gender);
+console.log("Equipaggio aggiornato", starWarsCharacters);
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
